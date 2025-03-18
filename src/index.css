@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,10 +6,11 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', serif;
+  font-family: "Lato", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(#d0d6d9, #b1b4ba);
+  /* 调整背景渐变色为蓝色调 */
+  background: linear-gradient(#d0dae9, #b1c4d9);
   color: #d9e2f1;
   min-height: 100vh;
 }
@@ -24,17 +25,19 @@ header img {
   height: 5rem;
   object-fit: contain;
   border-radius: 50%;
-  border: 2px solid #758a8a;
+  /* 边框颜色调整为蓝色调 */
+  border: 2px solid #547e9a;
   filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5));
 }
 
 header h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: 700;
   font-size: 3rem;
   margin: 1rem 0;
   letter-spacing: 0.2rem;
-  color: #2f4444;
+  /* 改为深蓝色 */
+  color: #253341;
 }
 
 form {
@@ -42,7 +45,8 @@ form {
   max-width: 40rem;
   margin: 3rem auto;
   padding: 2rem;
-  background: linear-gradient(180deg, #253c3c, #1d4949);
+  /* 表单背景使用深蓝色渐变 */
+  background: linear-gradient(180deg, #20304b, #162a3f);
   border-radius: 8px;
   box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
 }
@@ -60,7 +64,8 @@ fieldset {
   display: block;
   font-size: 0.8rem;
   margin-bottom: 0.2rem;
-  color: #9bafaf;
+  /* 调整为蓝色调标签 */
+  color: #9bb3c3;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -72,9 +77,12 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
-  color: #142020;
+  /* 边框颜色改为蓝灰色 */
+  border: 1px solid #547e9a;
+  /* 输入框背景为淡蓝色 */
+  background-color: #a1b7d8;
+  /* 文字颜色调整为较深的蓝色 */
+  color: #142d49;
 }
 
 .control select {
@@ -84,21 +92,21 @@ fieldset {
   padding: 0.5rem;
   font-size: 1rem;
   border-radius: 4px;
-  border: 1px solid #758a8a;
-  background-color: #869999;
-  color: #142020;
+  border: 1px solid #547e9a;
+  background-color: #a1b7d8;
+  color: #142d49;
 }
 
-.control:has(input[type='checkbox']) {
+.control:has(input[type="checkbox"]) {
   display: flex;
   align-items: center;
 }
 
-.control:has(input[type='checkbox']) label {
+.control:has(input[type="checkbox"]) label {
   margin: 0;
 }
 
-.control input[type='checkbox'] {
+.control input[type="checkbox"] {
   display: inline-block;
   width: auto;
   max-width: none;
@@ -110,7 +118,8 @@ fieldset {
 }
 
 .control-error {
-  color: #ffca99;
+  /* 错误信息改为蓝色调 */
+  color: #91a9d1;
   font-size: 0.8rem;
   height: 2rem;
   padding: 0.5rem 0;
@@ -138,23 +147,25 @@ fieldset {
   font-size: 1rem;
   border-radius: 4px;
   border: none;
-  background-color: #147b73;
+  /* 按钮主色改为蓝色 */
+  background-color: #1a5ea8;
   color: #d9e2f1;
   cursor: pointer;
 }
 
 .button:hover,
 .button:focus {
-  background-color: #319890;
+  background-color: #3181d6;
 }
 
 .button-flat {
   background-color: transparent;
-  color: #9cbaba;
+  /* 扁平按钮颜色改为淡蓝色 */
+  color: #8ca7d1;
 }
 
 .button-flat:hover,
 .button-flat:focus {
   background-color: transparent;
-  color: #869999;
+  color: #a4bce6;
 }
